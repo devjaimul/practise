@@ -12,7 +12,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       // debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Text(
+        body:
+        Text(
           'hello world',
           textAlign: TextAlign.center,
           style: TextStyle(
@@ -21,6 +22,8 @@ class MyApp extends StatelessWidget {
               color: Colors.teal,
              decoration: TextDecoration.underline),
         ),
+        appBar: AppBar(title: Text('app bar'),),
+
       ),
     );
   }
