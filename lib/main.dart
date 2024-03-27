@@ -12,16 +12,33 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       // debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body:
-        Text(
-          'hello world',
-          textAlign: TextAlign.center,
-          style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.w400,
-              color: Colors.teal,
-             decoration: TextDecoration.underline),
+        body:Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+
+          children: [
+            Text(
+              'hello world',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.teal,
+                  decoration: TextDecoration.underline),
+            ),
+            Row(children: [
+              Text(
+                'hello world',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w400,
+                    color: Colors.teal,
+                    decoration: TextDecoration.underline),
+              ),
+            ],)
+          ],
         ),
+
         appBar: AppBar(title: Text('app bar'),),
 
       ),
